@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
-//Add variables here:
+//Variable to save a specific color that can be referenced throughout the entire stylesheet using just its variable name
+$translucent-white: rgba(255,255,255,0.3);
 
 h1 {
   font-family: Roboto, sans-serif;
@@ -29,6 +30,7 @@ h1 {
     width: 50%;
     height: 200px;
     text-align: center;
+    background-color: $translucent-white; //Uses value defined for the variable at the top of the stylesheet
     //Since the styling below is only wanted for the span tag WITHIN slogan its styling
     //is nested within the slogan selector as a child of slogan
     span {
