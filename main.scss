@@ -10,6 +10,8 @@ h1 {
   font-family: 'Pacifico', cursive;
   height: 400px;
   background-image: url("lemonade.jpg");
+  //Nest slogan class within banner, because it is a child of banner
+  //This helps easily identify DOM relationships between different components while styling
   .slogan {
     position: absolute;
     border: 4px solid black;
