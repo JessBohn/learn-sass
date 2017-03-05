@@ -20,6 +20,12 @@ h1 {
     width: 50%;
     height: 200px;
     text-align: center;
+    //Since the styling below is only wanted for the span tag WITHIN slogan its styling
+    //is nested within the slogan selector as a child of slogan
+    span {
+      font-size: 24px;
+      line-height: 200px;
+    }
   }
 }
 
