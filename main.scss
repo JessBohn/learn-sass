@@ -10,6 +10,15 @@ h1 {
   font-family: 'Pacifico', cursive;
   height: 400px;
   background-image: url("lemonade.jpg");
+  //Nesting can be used to simplify CSS property selectors
+  //i.e. the nested border properties below would usually be done like this:
+  //border-top: ;
+  //border-bottom: ;
+  //But the nested way provides a more organized way to keep track of all border-related properties for that selector
+  border : {
+    top: 4px solid black;
+    bottom: 4px solid black;
+  }
   //Nest slogan class within banner, because it is a child of banner
   //This helps easily identify DOM relationships between different components while styling
   .slogan {
