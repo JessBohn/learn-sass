@@ -1,2 +1,2 @@
 # learn-sass
-Getting familiar with Sass
+Codecademy course for learning Sass
