@@ -29,7 +29,7 @@ h1 {
   //This helps easily identify DOM relationships between different components while styling
   .slogan {
     position: absolute;
-    border: 4px solid black;
+    border: $standard-border;
     top: 200px;
     left: 25%;
     width: 50%;
