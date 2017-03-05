@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 //Variable to save a specific color that can be referenced throughout the entire stylesheet using just its variable name
 $translucent-white: rgba(255,255,255,0.3);
+// Define variable for the number(size) that we want to use for each icon
+$icon-square-length: 300px;
+//Variables can have values that are color types, numbers, strings, booleans, and null
 
 h1 {
   font-family: Roboto, sans-serif;
