@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 //Variable to save a specific color that can be referenced throughout the entire stylesheet using just its variable name
 $translucent-white: rgba(255,255,255,0.3);
+// Define variable for the number(size) that we want to use for each icon
+$icon-square-length: 300px; //Defines reusable size for the icons
+//Variables can have values that are color types, numbers, strings, booleans, and null
+//Variable values can also be be lists (like below) or maps (key-value pairs)
+$standard-border: 4px solid black; //Defines the standard list throughout the SS for a border
 
 h1 {
   font-family: Roboto, sans-serif;
@@ -17,14 +22,14 @@ h1 {
   //border-bottom: ;
   //But the nested way provides a more organized way to keep track of all border-related properties for that selector
   border : {
-    top: 4px solid black;
-    bottom: 4px solid black;
+    top: $standard-border;
+    bottom: $standard-border;
   }
   //Nest slogan class within banner, because it is a child of banner
   //This helps easily identify DOM relationships between different components while styling
   .slogan {
     position: absolute;
-    border: 4px solid black;
+    border: $standard-border;
     top: 200px;
     left: 25%;
     width: 50%;
@@ -48,7 +53,9 @@ h1 {
   .icon {
     display: inline-block;
     margin: 2%;
-    border: 4px solid black;
+    border: $standard-border;
     font-size: 32px;
+    width: $icon-square-length;
+    height: $icon-square-length;
   }
 }
