@@ -32,4 +32,12 @@ h1 {
 .container {
   text-align: center;
   font-family: 'Pacifico', cursive;
+  //Icon class and container child selector styling
+  //Only style each of the icon classes present within the container (their parent)
+  .icon {
+    display: inline-block;
+    margin: 2%;
+    border: 4px solid black;
+    font-size: 32px;
+  }
 }
